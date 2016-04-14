@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kr.hs.emirim.beee1004.calculator.MainActivity"
-    android:id="@+id/edit">
+    android:id="@+id/edit"
+    android:background="#56b762">
 
     <EditText
         android:layout_width="100dp"
@@ -34,15 +35,18 @@
         android:layout_marginBottom="28dp"
         android:layout_above="@+id/button_min"
         android:layout_centerHorizontal="true"
-        android:text="@string/str_plus"/>
+        android:text="@string/str_plus"
+        android:background="#f8bbd0"/>
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/button_min"
         android:textSize="20dp"
+        android:text="@string/str_min"
+        android:background="#f8bbd0"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/str_min"/>
+        android:layout_alignLeft="@+id/button_plus"
+        android:layout_alignStart="@+id/button_plus" />
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -52,7 +56,8 @@
         android:text="@string/str_mul"
         android:layout_below="@+id/button_min"
         android:layout_alignLeft="@+id/button_min"
-        android:layout_alignStart="@+id/button_min" />
+        android:layout_alignStart="@+id/button_min"
+        android:background="#f8bbd0"/>
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -62,7 +67,8 @@
         android:text="@string/str_div"
         android:layout_below="@+id/button_mul"
         android:layout_alignLeft="@+id/button_mul"
-        android:layout_alignStart="@+id/button_mul" />
+        android:layout_alignStart="@+id/button_mul"
+        android:background="#f8bbd0"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -70,9 +76,9 @@
         android:id="@+id/text_result"
         android:textSize="20dp"
         android:textColor="#ac1b1b"
+        android:layout_marginTop="61dp"
         android:layout_below="@+id/button_div"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
