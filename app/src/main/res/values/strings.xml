@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">앙!계산띠</string>
+    <string name="str_plus">더하기</string>
+    <string name="str_min">빼기</string>
+    <string name="str_mul">곱하기</string>
+    <string name="str_div">나누기</string>
+</resources>
